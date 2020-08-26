@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_20_dp"
+    android:layout_marginRight="@dimen/margin_20_dp"
+    android:background="@drawable/dialog_bg">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_30_dp"
+        android:layout_marginTop="@dimen/margin_30_dp"
+        android:layout_marginEnd="@dimen/margin_20_dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/custom_alert_dialog_title_placeholder"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_30_dp"
+        android:layout_marginTop="@dimen/margin_15_dp"
+        android:layout_marginEnd="@dimen/margin_20_dp"
+        android:text="@string/custom_alert_dialog_message_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogTitle">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/dialogActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20_dp"
+        android:layout_marginEnd="@dimen/margin_20_dp"
+        android:layout_marginBottom="@dimen/margin_20_dp"
+        android:background="@android:color/transparent"
+        android:text="@string/custom_alert_dialog_button_text_placeholder"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogMessage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_10_dp">10dp</dimen>
+    <dimen name="margin_15_dp">15dp</dimen>
+    <dimen name="margin_20_dp">20dp</dimen>
+    <dimen name="margin_30_dp">30dp</dimen>
+    <dimen name="margin_50_dp">50dp</dimen>
+    <dimen name="margin_60_dp">60dp</dimen>
+
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_24sp">24sp</dimen>
+
+    <dimen name="icon_dim">36dp</dimen>
+    <dimen name="close_button_dim">20dp</dimen>
+
+    <dimen name="close_button_elevation">3dp</dimen>
+</resources>

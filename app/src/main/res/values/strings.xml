@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">EatWell</string>
+    <string name="retrofit_service_base_url">https://api.foursquare.com/v2/venues/</string>
+    <string name="restaurant_name_placeholder">Restaurant Name</string>
+    <string name="restaurant_rating_placeholder">Rating</string>
+    <string name="restaurant_category_placeholder">Category</string>
+    <string name="restaurant_price_tier_placeholder">Price Tier</string>
+    <string name="restaurant_website_placeholder">Website</string>
+    <string name="restaurant_status_placeholder">Status</string>
+    <string name="restaurant_contact_text">Contact</string>
+
+    <!--    Dialog Placeholder strings-->
+    <string name="custom_alert_dialog_title_placeholder">Title</string>
+    <string name="custom_alert_dialog_message_placeholder">Message</string>
+    <string name="custom_alert_dialog_button_text_placeholder">Button</string>
+
+    <!--    Dialog Placeholder strings-->
+    <string name="dialog_location_permission_required_title">Permission not granted</string>
+    <string name="dialog_location_permission_required_message">This app requires your current location in order to work properly.</string>
+    <string name="dialog_positive_button">OK</string>
+    <string name="dialog_call_permission_required_title">Permission not granted</string>
+    <string name="dialog_call_permission_required_message">This app requires your permission in order to perform calls.</string>
+    <string name="dialog_location_disabled_title">Location Disabled</string>
+    <string name="dialog_location_disabled_message">This app requires your current location in order to work properly. Please enable it.</string>
+    <string name="dialog_connection_disabled_title">Network disabled.</string>
+    <string name="dialog_connection_disabled_message">Please enable Network in your settings to use this app.</string>
+
+    <!--    Error messages strings-->
+    <string name="restaurants_fetch_error">There was an error fetching restaurants in your area.</string>
+    <string name="location_fetch_error">There was an error fetching your current location</string>
+    <string name="restaurant_details_fetch_error">There was an error fetching the restaurant details.</string>
+    <string name="call_permission_not_granted_error">Can\'t perform call. Permissions not granted</string>
+    <string name="category_fetch_error">Category not available</string>
+    <string name="rating_fetch_error">Rating not available</string>
+    <string name="tier_fetch_error">Price tier not available</string>
+    <string name="hours_fetch_error">Status not available</string>
+    <string name="map_permission_not_granted_error">"Can't fetch Map. Permission not granted."</string>
+
+    <!--    App bundle strings-->
+    <string name="restaurant_id_key">restaurantId</string>
+
+    <!--    UI Tests strings-->
+    <string name="details_page_not_found">Restaurant details page not found. Test failed.</string>
+    <string name="map_page_not_found">Map page not found. Test failed.</string>
+
+</resources>

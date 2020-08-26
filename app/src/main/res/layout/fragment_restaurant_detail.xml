@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/restaurantDetailFragment"
+    android:backgroundTint="@color/colorPrimaryDark"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/restaurantImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_10_dp"
+            app:layout_constraintBottom_toTopOf="@+id/restaurantImageHorizontalGuideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backButton" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/restaurantImageHorizontalGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/restaurantName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20_dp"
+            android:layout_marginTop="@dimen/margin_20_dp"
+            android:layout_marginEnd="@dimen/margin_20_dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/restaurant_name_placeholder"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/restaurantImageHorizontalGuideline" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20_dp"
+            android:layout_marginTop="@dimen/margin_20_dp"
+            android:numStars="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantName" />
+
+        <TextView
+            android:id="@+id/restaurantRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_30_dp"
+            android:layout_marginTop="@dimen/margin_20_dp"
+            android:layout_marginEnd="@dimen/margin_20_dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/restaurant_rating_placeholder"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ratingBar"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantName" />
+
+        <TextView
+            android:id="@+id/restaurantCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20_dp"
+            android:layout_marginTop="@dimen/margin_20_dp"
+            android:text="@string/restaurant_category_placeholder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+        <TextView
+            android:id="@+id/restaurantPriceTier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20_dp"
+            android:layout_marginEnd="@dimen/margin_20_dp"
+            android:text="@string/restaurant_price_tier_placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+        <TextView
+            android:id="@+id/restaurantWebsite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20_dp"
+            android:layout_marginTop="@dimen/margin_50_dp"
+            android:layout_marginEnd="@dimen/margin_20_dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/restaurant_website_placeholder"
+            android:textSize="@dimen/text_size_18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantCategory" />
+
+        <TextView
+            android:id="@+id/restaurantStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20_dp"
+            android:layout_marginTop="@dimen/margin_60_dp"
+            android:layout_marginEnd="@dimen/margin_20_dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/restaurant_status_placeholder"
+            android:textSize="@dimen/text_size_16sp"
+            app:layout_constraintEnd_toStartOf="@+id/verticalGuideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantWebsite" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/verticalGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/restaurantContactText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20_dp"
+            android:layout_marginTop="@dimen/margin_30_dp"
+            android:layout_marginEnd="@dimen/margin_20_dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/restaurant_contact_text"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantWebsite" />
+
+        <ImageView
+            android:id="@+id/phoneIcon"
+            android:layout_width="@dimen/icon_dim"
+            android:layout_height="@dimen/icon_dim"
+            android:layout_marginTop="@dimen/margin_20_dp"
+            android:layout_marginBottom="@dimen/margin_20_dp"
+            android:background="@drawable/ic_action_call"
+            android:backgroundTint="@color/colorGreen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/verticalGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/restaurantContactText" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="@dimen/close_button_dim"
+            android:layout_height="@dimen/close_button_dim"
+            android:layout_marginStart="@dimen/margin_10_dp"
+            android:layout_marginTop="@dimen/margin_10_dp"
+            android:background="@drawable/ic_close"
+            android:elevation="@dimen/close_button_elevation"
+            android:backgroundTint="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/colorAccent"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
