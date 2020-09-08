@@ -5,7 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.marcocaloiaro.eatwell.data.di.AppModule
+import com.marcocaloiaro.eatwell.di.AppModule
 import com.marcocaloiaro.eatwell.data.model.Resource
 import com.marcocaloiaro.eatwell.restaurantscreen.model.restaurantdetail.Venue
 import com.marcocaloiaro.eatwell.data.remote.NetworkDataSource

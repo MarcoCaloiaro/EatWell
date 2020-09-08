@@ -1,4 +1,4 @@
-package com.marcocaloiaro.eatwell.data.di
+package com.marcocaloiaro.eatwell.di
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

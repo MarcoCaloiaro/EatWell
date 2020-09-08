@@ -15,7 +15,7 @@ import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationResult
 import com.google.android.gms.maps.model.LatLng
-import com.marcocaloiaro.eatwell.data.di.AppModule
+import com.marcocaloiaro.eatwell.di.AppModule
 import com.marcocaloiaro.eatwell.data.local.LRUCache
 import com.marcocaloiaro.eatwell.data.model.Resource
 import com.marcocaloiaro.eatwell.mapscreen.model.restaurants.Venues

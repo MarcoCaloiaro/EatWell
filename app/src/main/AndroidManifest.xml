@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
-        android:name="com.marcocaloiaro.eatwell.data.di.BaseApplication"
+        android:name="com.marcocaloiaro.eatwell.di.BaseApplication"
         android:allowBackup="false"
         android:icon="@drawable/app_logo"
         android:label="@string/app_name"

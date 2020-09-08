@@ -1,4 +1,4 @@
-package com.marcocaloiaro.eatwell.data.di
+package com.marcocaloiaro.eatwell.di
 
 import android.content.Context
 import android.location.LocationManager
